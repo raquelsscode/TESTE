@@ -16,8 +16,6 @@
   
   <link rel="stylesheet" type="text/css" href="../assets/vendor/owl-carousel/owl.carousel.css">
   
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
-  
   <link rel="stylesheet" type="text/css" href="../assets/vendor/nice-select/css/nice-select.css">
   
   <link rel="stylesheet" type="text/css" href="../assets/vendor/fancybox/css/jquery.fancybox.min.css">
@@ -27,6 +25,8 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/topbar.virtual.css">
 
   <link rel="stylesheet" type="text/css" href="../assets/css/index.css" />
+
+  <link rel="stylesheet" href="darkmode.css">
 </head>
 <body class="theme-red">
   
@@ -82,6 +82,16 @@
               <button class="btn btn-fab btn-theme no-shadow"><a href="./index-english.html">EN</a></button>
             </li>
           </ul>
+          <ul class="dark-mode">
+          <div>
+            <input type="checkbox" class="checkbox" id="chk"/>
+            <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+        </ul>
         </div>
       </div>
     </div> <!-- End Navbar -->
@@ -105,15 +115,15 @@
         <div class="col-lg-6 offset-lg-1 wow fadeInRight">
           <h1 class="fw-light">Raquel Santos</h1>
           <h5 class="fg-theme mb-3">Desenvolvedora FullStack</h5>
-          <p class="text-muted">Formada em <strong>Administração</strong> e agora em processo de mudança de carreira para a <strong>programação</strong>, a verdade é que sempre amei tecnologia, e agora espero conquistar um crescimento enorme com o que <strong>amo fazer</strong>. Estou em busca de <strong>excelência
+          <p class="text-muted" id="desc">Formada em <strong>Administração</strong> e agora em processo de mudança de carreira para a <strong>programação</strong>, a verdade é que sempre amei tecnologia, e agora espero conquistar um crescimento enorme com o que <strong>amo fazer</strong>. Estou em busca de <strong>excelência
             profissional</strong>, plano de carreira e novos desafios, quero poder provar a cada dia minhas <strong>habilidades</strong> e passar por cima de qualquer obstáculo. Sou nerd de carteirinha, amo video games, livros e andar de bike aos fins de semanas.</p>
           <ul class="theme-list">
-            <li><b>Sou de:</b> São Paulo, SP</li>
-            <li><b>Morando em:</b> São Paulo, SP</li>
-            <li><b>Idade:</b> 25 </li>
+            <li class="name"><b>Sou de:</b> São Paulo, SP</li>
+            <li class="name"><b>Morando em:</b> São Paulo, SP</li>
+            <li class="name"><b>Idade:</b> 25 </li>
           </ul>
-          <button class="btn btn-theme-outline"><a href="../assets/documents/Currículo-Raquel-Santos.pdf" download="Currículo-Raquel-Santos">Download CV</a></button>
-          <button class="btn btn-theme-outline"><a href="https://www.linkedin.com/in/raquel-santos-da-silva/" target="_blank"></a>Linkedin</button>
+          <button class="btn btn-theme-outline"><a href="../assets/documents/Raquel_Santos.pdf" download="Currículo-Raquel-Santos">Download CV</a></button>
+          <button class="btn btn-theme-outline"><a href="https://www.linkedin.com/in/raquel-santos-da-silva/" target="_blank">Linkedin</a></button>
         </div>
       </div>
     </div>
@@ -213,7 +223,7 @@
           </ul>
         </div>
         <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
-          <h2 class="fw-normal">Experiências Profissionais</h2>
+          <h2 class="fw-normal title">Experiências Profissionais</h2>
           <ul class="timeline mt-4 pr-md-5">
             <li>
               <div class="title">2023</div>
@@ -338,12 +348,12 @@
   </div> <!-- End Portfolio page -->
   
     <!-- Contact -->
-    <div class="page-contact" id="contact">
+    <div id="contact">
       <div class="container-fluid">
         <div class="text-center wow fadeInUp">
           <div class="badge badge-subhead">Contact</div>
         </div>
-        <h1 class="text-center fw-normal wow fadeInUp">Entre em contato comigo!</h1>
+        <h1 class="text-center fw-normal wow fadeInUp title">Entre em contato comigo!</h1>
         <div class="row py-5" style="justify-content: center;">
           <div class="wow zoomIn">
             <div>
@@ -382,8 +392,6 @@
     
   <script src="../assets/vendor/owl-carousel/owl.carousel.min.js"></script>
     
-  <script src="../assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-    
   <script src="../assets/vendor/isotope/isotope.pkgd.min.js"></script>
     
   <script src="../assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
@@ -395,12 +403,12 @@
   <script src="../assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
 
   <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-
-  <script src="../assets/js/google-maps.js"></script>
     
   <script src="../assets/js/topbar-virtual.js"></script>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
   
 </body>
 </html>
