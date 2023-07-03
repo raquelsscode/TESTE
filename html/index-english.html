@@ -27,6 +27,8 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/topbar.virtual.css">
 
   <link rel="stylesheet" type="text/css" href="../assets/css/index.css" />
+
+  <link rel="stylesheet" href="darkmode.css">
 </head>
 <body class="theme-red">
   
@@ -82,6 +84,16 @@
               <button class="btn btn-fab btn-theme no-shadow"><a href="./index.html">PT</a></button>
             </li>
           </ul>
+          <ul class="dark-mode">
+            <div>
+              <input type="checkbox" class="checkbox" id="chk"/>
+              <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+              </label>
+            </div>
+          </ul>
         </div>
       </div>
     </div> <!-- End Navbar -->
@@ -105,15 +117,14 @@
         <div class="col-lg-6 offset-lg-1 wow fadeInRight">
           <h1 class="fw-light">Raquel Santos</h1>
           <h5 class="fg-theme mb-3">FullStack Developer</h5>
-          <p class="text-muted">I graduated in Business <strong>Administration</strong> and am now in the process of changing my career to <strong>Web development.</strong> 
+          <p class="text-muted" id="desc">I graduated in Business <strong>Administration</strong> and am now in the process of changing my career to <strong>Web development.</strong> 
             The truth is that I've always loved technology, and now I hope to achieve enormous growth with what <strong>I love to do.</strong>
             I'm looking for <strong>professional excellence</strong> , a career plan, and new challenges. I want to be able to prove my skills every day and overcome any obstacle. I'm a nerd.
             I love video games, books, and riding my bike on the weekends.
           <ul class="theme-list">
-            <li><b>From:</b> São Paulo, SP</li>
-            <li><b>Lives in:</b> São Paulo, SP</li>
-            <li><b>Age:</b> 25 </li>
-            <li><b>Gender:</b>Feminino</li>
+            <li class="name"><b>From:</b> São Paulo, SP</li>
+            <li class="name"><b>Lives in:</b> São Paulo, SP</li>
+            <li class="name"><b>Age:</b> 25 </li>
           </ul>
           <button class="btn btn-theme-outline"><a href="../assets/documents/Currículo-Raquel-Santos.pdf" download="Currículo-Raquel-Santos">Download CV</a></button>
           <button class="btn btn-theme-outline"><a href="https://www.linkedin.com/in/raquel-santos-da-silva/" target="_blank">Linkedin</a></button
@@ -219,6 +230,25 @@
           <h2 class="fw-normal">Experience</h2>
           <ul class="timeline mt-4 pr-md-5">
             <li>
+              <div class="title">2023</div>
+              <div class="details">
+                <h5>Internship in Web Development</h5>
+                <small class="fg-theme">Arc Telecom</small>
+                <p>Development of Chatbot and Applications with Telephony Software APIs, in Lua, JavaScript, PHP languages, using tools such as Node.js, HTML, CSS and database. 
+                  Development of chatbots in Lua, creation of applications with integration of telephony APIs. Collaboration in multidisciplinary teams, problem solving and database optimization. Skills in web and mobile development, responsive interface and testing.</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2023</div>
+              <div class="details">
+                <h5>Internship in IT Support</h5>
+                <small class="fg-theme">Seta Consultoria</small>
+                <p>Assist in IP device configuration; Assist with customer service; Setup and assist in the implementation of 3CX cloud software;
+                  Assist with other activities in the area.
+                </p>
+              </div>
+            </li>
+            <li>
               <div class="title">2021</div>
               <div class="details">
                 <h5>Administrative assistant</h5>
@@ -232,14 +262,6 @@
                 <h5>Apprentice in the Commercial sector</h5>
                 <small class="fg-theme">Indústria Bandeirante de Artefatos de Plástico e madeira Ltda</small>
                 <p>Responsible for the commercial area, customers, orders and billing.</p>
-              </div>
-            </li>
-            <li>
-              <div class="title">2017</div>
-              <div class="details">
-                <h5>Intern in Administration</h5>
-                <small class="fg-theme">Universidade Federal de São Paulo</small>
-                <p>Receiving teachers, doctors and servers, scheduling meetings, assisting in the activities of the sector, organizing emails, responding, setting up meeting sheets, scheduling visits, setting up tables, controlling and organizing meeting rooms.</p>
               </div>
             </li>
           </ul>
@@ -262,7 +284,7 @@
       </div>
 
       <div class="gridder my-3">
-        <div class="grid-item apps wow zoomIn">
+        <div class="grid-item apps">
           <div class="img-place">
             <img src="../assets/img/work/Projeto_Planets_of_Star_Wars.png" alt="">
             <div class="img-caption">
@@ -331,7 +353,7 @@
   
   <!-- Contact -->
   <div>
-  <div class="page-contact" id="contact">
+  <div id="contact">
     <div class="container-fluid">
       <div class="text-center wow fadeInUp">
         <div class="badge badge-subhead">Contact</div>
@@ -375,8 +397,6 @@
     
   <script src="../assets/vendor/owl-carousel/owl.carousel.min.js"></script>
     
-  <script src="../assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-    
   <script src="../assets/vendor/isotope/isotope.pkgd.min.js"></script>
     
   <script src="../assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
@@ -388,12 +408,12 @@
   <script src="../assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
 
   <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-
-  <script src="../assets/js/google-maps.js"></script>
     
   <script src="../assets/js/topbar-virtual.js"></script>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
   
 </body>
 </html>
