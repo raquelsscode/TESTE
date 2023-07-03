@@ -4,6 +4,13 @@ body {
   transition: background 0.2s linear;
 }
 
+.dark-mode {
+  margin-top: 24px; 
+  margin-left: -25px; 
+  display: flex;
+  place-items: center;
+}
+
 body.dark {
   background: #292c35;
 }
